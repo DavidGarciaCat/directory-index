@@ -1,0 +1,91 @@
+@charset "iso-8859-1";
+
+/*	****************************************************************
+	* Estructura
+	**************************************************************** */
+
+	#WebBox {
+		border-radius: 5px ;
+		box-shadow: 0 0 10px #AAA ;
+		margin: 20px ;
+		padding: 10px ;
+		z-index: 25 ;
+	}
+
+	#WebBox #WebBoxRoot {
+		display: none ;
+		width: 100% ;
+		z-index: 50 ;
+	}
+
+/*	****************************************************************
+	* Bloquear pantalla y mostrar detalles
+	**************************************************************** */
+
+	#WebLock {
+		background-image: url(../images/bloquear.png);
+		display: none ;
+		z-index: 75 ;
+		position: fixed ;
+			top: 0 ;
+			bottom: 0 ;
+			left: 0 ;
+			right: 0 ;
+	}
+
+	#WebDetails {
+		background: #FFF ;
+		border-radius: 5px ;
+		box-shadow: 0 0 10px #AAA ;
+		display: none ;
+		padding: 10px ;
+		position: absolute ;
+		width: 400px ;
+		z-index: 100 ;
+	}
+
+/*	****************************************************************
+	* Listado de los archivos y directorios
+	**************************************************************** */
+
+	ul.FolderList li ,
+	ul.FilesList li {
+		border-radius: 5px ;
+		margin-left: 30px ;
+		padding: 5px ;
+		padding-left: 10px ;
+	}
+
+	ul.FolderList li {
+		list-style-image: url(../images/folder.gif) ;
+	}
+
+	ul.FilesList li {
+		list-style-image: url(../images/file.gif) ;
+	}
+
+/*	****************************************************************
+	* Listado de acciones disponibles
+	**************************************************************** */
+
+	ul.FolderActions {
+		float: right ;
+	}
+
+	ul.FolderActions li {
+		float: left ;
+		margin-left: 25px ;
+		padding-left: 0 ;
+	}
+
+	ul.FolderActions li.delete {
+		list-style-image: url(../images/delete.png) ;
+	}
+
+	ul.FolderActions li.detail {
+		list-style-image: url(../images/detail.gif) ;
+	}
+
+	ul.FolderActions li.download {
+		list-style-image: url(../images/download.png) ;
+	}
